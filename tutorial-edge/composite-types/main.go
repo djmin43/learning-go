@@ -23,8 +23,23 @@ func maps () {
 	fmt.Println(youtubeSubscribers["MKBHD"])	
 }
 
+type Person struct {
+	name string
+	age int
+}
+
+func strucType () {
+	var myPerson Person
+	jayMin := Person{name: "Jay", age: 33}
+	fmt.Println(jayMin)
+	fmt.Println(myPerson)
+	jayMin.name = "austin"
+	fmt.Println(jayMin)
+}
+
 func main () {
 	array()
 	slices()
 	maps()
+	strucType()
 }
