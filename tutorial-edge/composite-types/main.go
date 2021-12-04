@@ -15,10 +15,10 @@ func slices () {
 }
 
 func maps () {
-	youtubeSubscribers := map[string]int{
-		"TutorialEdge":     2240,
-		"MKBHD":            6580350,
-		"Fun Fun Function": 171220,
+	youtubeSubscribers := map[string]string{
+		"TutorialEdge":     "hello",
+		"MKBHD":            "world",
+		"Fun Fun Function": "my name is",
 	}
 	fmt.Println(youtubeSubscribers["MKBHD"])	
 }
