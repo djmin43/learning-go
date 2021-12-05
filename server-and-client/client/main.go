@@ -7,14 +7,9 @@ import (
 )
 
 func main() {
-	resp, err := http.Get("http://localhost:18888")
-	if err != nil {
-		panic(err)
-	}
+	resp, _ := http.Get("http://localhost:18888")
+	log.Println(resp)
 	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		panic(err)
-	}
+	body, _ := ioutil.ReadAll(resp.Body)
 	log.Println(string(body))
 }
