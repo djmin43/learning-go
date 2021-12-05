@@ -30,11 +30,11 @@ type Person struct {
 
 type Team struct {
 	name string
-	players [2]Person
+	players []Person
 }
 
 func nestedStructType() {
-	players := [...]Person{{name: "Jay", age: 2}, {name: "Austin", age: 4}}
+	players := []Person{{name: "Jay", age: 2}, {name: "Austin", age: 4}}
 	friendship := Team{name: "VanCity", players: players}
 	fmt.Println(friendship)
 }
