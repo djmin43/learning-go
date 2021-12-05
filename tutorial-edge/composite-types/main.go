@@ -28,6 +28,17 @@ type Person struct {
 	age int
 }
 
+type Team struct {
+	name string
+	players [2]Person
+}
+
+func nestedStructType() {
+	players := [...]Person{{name: "Jay", age: 2}, {name: "Austin", age: 4}}
+	friendship := Team{name: "VanCity", players: players}
+	fmt.Println(friendship)
+}
+
 func strucType () {
 	var myPerson Person
 	jayMin := Person{name: "Jay", age: 33}
@@ -42,4 +53,5 @@ func main () {
 	slices()
 	maps()
 	strucType()
+	nestedStructType()
 }
