@@ -11,7 +11,7 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Simple Shell")
-	fmt.Println("------------")
+	fmt.Println("---------------")
 
 	for {
 		fmt.Print("->")
