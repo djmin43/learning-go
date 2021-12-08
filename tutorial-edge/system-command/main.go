@@ -7,7 +7,7 @@ import (
 )
 
 func execute() {
-	out, err := exec.Command("ls").Output()
+	out, err := exec.Command("ls", "-ltr").Output()
 
 
 	if err != nil {
@@ -34,3 +34,4 @@ func main() {
 		execute()
 	}
 }
+
