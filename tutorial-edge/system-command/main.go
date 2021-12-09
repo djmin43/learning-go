@@ -29,7 +29,7 @@ func execute() {
 
 func main() {
 	if runtime.GOOS == "windows" {
-		fmt.Println("CAn't execute this on a window machine") 
+		fmt.Println("Can't execute this on a window machine") 
 	} else {
 		execute()
 	}
