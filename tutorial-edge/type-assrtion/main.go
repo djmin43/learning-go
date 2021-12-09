@@ -17,13 +17,14 @@ func GetDeveloper(name interface{}, age interface{}) Developer {
 }
 
 func main() {
-	fmt.Println("hello world")
-
 	var name interface{} = "Jay"
-	var age interface{} = 33
 
-	newDev := GetDeveloper(name, age)
-	fmt.Println(newDev.Name)
-	fmt.Println(newDev.Age)
+	value, ok := name.(string)
+	fmt.Println(value)
+	fmt.Println(ok)
+
+	intValue, ok := name.(int)
+	fmt.Println(intValue)
+	fmt.Println(ok)
 
 }
