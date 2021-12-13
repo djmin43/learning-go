@@ -1,16 +1,9 @@
 package main
 
-import (
-	"log"
-	"net/http"
-	"strings"
-)
+import "mime/multipart"
 
 func main() {
-	reader := strings.NewReader("text!!")
-	resp, err := http.Post("http://localhost:18888", "text/plan", reader)
-	if err != nil {
-		panic(err)
-	}
-	log.Println("Status:", resp.Status)
+	var buffer bytes.buffer
+	writer := multipart.NewWriter(&buffer)
+	
 }
