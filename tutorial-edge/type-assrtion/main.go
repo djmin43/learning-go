@@ -26,5 +26,4 @@ func main() {
 	intValue, ok := name.(int)
 	fmt.Println(intValue)
 	fmt.Println(ok)
-
 }
