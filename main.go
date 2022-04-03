@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/djmin43/learning-go/mascot"
-	"rsc.io/quote"
 )
 
 func main() {
-	fmt.Println("hello world")
-	fmt.Println(mascot.BestMascot())
-	fmt.Println(quote.Go())
+	// fmt.Println("hello world")
+	// fmt.Println(mascot.BestMascot())
+	// fmt.Println(quote.Go())
+	// fmt.Println("Greetings and \n\"Salutations\"")
+	isStringLarger := "a" > "b"
+	fmt.Println(isStringLarger)
 }
