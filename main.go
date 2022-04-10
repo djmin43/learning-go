@@ -7,8 +7,10 @@ import (
 	"rsc.io/quote"
 )
 
+
 func main() {
 	fmt.Println("hello world")
 	fmt.Println(mascot.BestMascot())
 	fmt.Println(quote.Go())
 }
+
