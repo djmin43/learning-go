@@ -12,6 +12,7 @@ func main() {
 	fmt.Println("hello world")
 	fmt.Println(mascot.BestMascot())
 	fmt.Println(quote.Go())
+<<<<<<< HEAD
 	slicingSlices()
 }
 
@@ -22,3 +23,10 @@ func slicingSlices() {
 }
 
 
+=======
+}
+
+func slicingSlices() {
+
+}
+>>>>>>> 124a67cd855e212be3a14983c075fd7c84f18923
