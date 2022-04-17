@@ -12,13 +12,13 @@ func main() {
 	fmt.Println("hello world")
 	fmt.Println(mascot.BestMascot())
 	fmt.Println(quote.Go())
-	declareSlices()
+	slicingSlices()
 }
 
-
-
-func declareSlices() {
-
-
+func slicingSlices() {
+	x := []int{1, 2, 3, 4}
+	num := copy(x[:3], x[1:])
+	fmt.Println(x, num)
 }
+
 
