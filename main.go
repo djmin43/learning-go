@@ -11,11 +11,13 @@ func main() {
 	fmt.Println("hello world")
 	fmt.Println(mascot.BestMascot())
 	fmt.Println(quote.Go())
-	slicingSlices()
+	runesAndBytes()
 }
 
-func slicingSlices() {
-	x := []int{1, 2, 3, 4}
-	num := copy(x[:3], x[1:])
-	fmt.Println(x, num)
+func runesAndBytes() {
+	var a rune = '0'
+	var s string = string(a)
+	var b byte = 'y'
+	var s2 string = string(b)
+	fmt.Println(a, s, b, s2)
 }
