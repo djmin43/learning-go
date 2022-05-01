@@ -15,9 +15,12 @@ func main() {
 }
 
 func runesAndBytes() {
-	var a rune = '0'
-	var s string = string(a)
-	var b byte = 'y'
-	var s2 string = string(b)
-	fmt.Println(a, s, b, s2)
+	var s string = "hello, go"
+	var bs []byte = []byte(s)
+	var rs []rune = []rune(s)
+	fmt.Println(bs)
+	fmt.Println(rs)
+	// byte is 8 bit
+	// rune is 32 bit (4 byte)
+	// UTF-8 can be anywhere from one to four bytes long
 }
