@@ -1,20 +1,15 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/djmin43/learning-go/mascot"
-	"rsc.io/quote"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(mascot.BestMascot())
-	fmt.Println(quote.Go())
-	slicingSlices()
-}
-
-func slicingSlices() {
-	x := []int{1, 2, 3, 4}
-	num := copy(x[:3], x[1:])
-	fmt.Println(x, num)
+	type person struct {
+		name string
+		age  int
+		pet  string
+	}
+	var fred person
+	fmt.Println(fred)
+	bob := person{}
+	fmt.Println(bob)
 }
