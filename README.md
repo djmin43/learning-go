@@ -1,1 +1,1 @@
-go is boring
+go is boring but good.
