@@ -1,24 +1,13 @@
 package main
 
+import "fmt"
+
 func main() {
-	type person struct {
-		name string
-		age  int
-		pet  string
+	x := 10
+	if x > 5 {
+		fmt.Println(x)
+		x := 5
+		fmt.Println(x)
 	}
-
-	type firstPerson struct {
-		name string
-		age  int
-	}
-
-	type secondPerson struct {
-		name string
-		age  int
-	}
-
-	type thirdPerson struct {
-		age  int
-		name string
-	}
+	fmt.Println(x)
 }
