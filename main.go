@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	evenVals := []int{2, 4, 6, 8, 10, 12}
-	for i, v := range evenVals {
-		fmt.Println(i, v)
+	uniqueNames := map[string]bool{"fred": true, "raul": true, "wilma": true}
+	for k, v := range uniqueNames {
+		fmt.Println(k, v)
 	}
 }
