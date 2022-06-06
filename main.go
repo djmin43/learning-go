@@ -1,27 +1,24 @@
 package main
 
-import "fmt"
-
 func main() {
 	type person struct {
 		name string
 		age  int
 		pet  string
 	}
-	var fred person
-	fmt.Println(fred)
-	bob := person{}
-	fmt.Println(bob)
-	julia := person{
-		"julia",
-		40,
-		"cat",
+
+	type firstPerson struct {
+		name string
+		age  int
 	}
-	sang := person{
-		name: "sang",
-		age:  100,
-		pet:  "vayne",
+
+	type secondPerson struct {
+		name string
+		age  int
 	}
-	fmt.Println(sang)
-	fmt.Println(julia)
+
+	type thirdPerson struct {
+		age  int
+		name string
+	}
 }
