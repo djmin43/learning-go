@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	twoBase := makeMult(2)
+	//this returns a function
 	fmt.Println(twoBase(2))
 }
 
