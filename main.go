@@ -3,25 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	type person struct {
-		name string
-		age  int
-		pet  string
+	twoBase := makeMult(2)
+	fmt.Println(twoBase(2))
+}
+
+func makeMult(base int) func(int) int {
+	return func(factor int) int {
+		return base * base
 	}
-	var fred person
-	fmt.Println(fred)
-	bob := person{}
-	fmt.Println(bob)
-	julia := person{
-		"julia",
-		40,
-		"cat",
-	}
-	sang := person{
-		name: "sang",
-		age:  100,
-		pet:  "vayne",
-	}
-	fmt.Println(sang)
-	fmt.Println(julia)
 }
