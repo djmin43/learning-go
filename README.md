@@ -1,1 +1,1 @@
-go is boring but good.
+this is a playground for the book learning-go by Jon Bodner
