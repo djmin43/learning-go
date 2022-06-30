@@ -2,10 +2,22 @@ package main
 
 import "fmt"
 
-func main() {
+type Person struct {
+	FirstName string
+	LastName  string
+	Age       int
+}
 
-	uniqueNames := map[string]bool{"fred": true, "raul": true, "wilma": true}
-	for k, v := range uniqueNames {
-		fmt.Println(k, v)
+func (p Person) String() string {
+	return fmt.Sprintf("%s %s, age %d", p.FirstName, p.LastName, p.Age)
+}
+
+func main() {
+	p := Person{
+		FirstName: "Fred",
+		LastName:  "Fredson",
+		Age:       52,
 	}
+	output := p.String()
+	fmt.Println(output)
 }
